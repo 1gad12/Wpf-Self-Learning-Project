@@ -7,3 +7,5 @@ to play click on bin/debug/SuperMargalitProj.exe
 to open code click on SuperMargalitProj.sln
 
 the project is a c# wpf code
+
+the code was programmed on visual studio 2019
