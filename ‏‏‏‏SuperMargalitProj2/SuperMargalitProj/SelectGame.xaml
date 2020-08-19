@@ -1,0 +1,101 @@
+﻿<Window x:Class="SuperMargalitProj.SelectGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuperMargalitProj"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="SelectGame" Height="1080" Width="1920" KeyDown="Window_KeyDown">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="image/Other/Selectgame.png" x:Name="Gridi"></ImageBrush>
+        </Grid.Background>
+        <MediaElement Volume="1" Name="Wait" Source="Songs/SelectWin.mp3" MediaEnded="media_MediaEnded"  LoadedBehavior="Manual" UnloadedBehavior="Close" Height="1080" Width="1920" Visibility="Hidden"/>
+
+        <Button x:Name="Journey"  Content="" HorizontalAlignment="Left" Height="612" Style="{StaticResource MyButton}" Background="Transparent" Margin="777,538,0,-78" VerticalAlignment="Top" Width="1106" RenderTransformOrigin="0.5,0.5" MouseEnter="Journey_MouseEnter" Click="Journey_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.026"/>
+                    <SkewTransform AngleX="-19.711" AngleY="-4.073"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="127.065" Y="-40.258"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Margabot"  Content="" HorizontalAlignment="Left" Height="536" Style="{StaticResource MyButton}" Background="Transparent" Margin="-208,609,0,-73" VerticalAlignment="Top" Width="901" RenderTransformOrigin="0.5,0.5" MouseEnter="Margabot_MouseEnter" MouseLeave="Margabot_MouseLeave" Click="Margabot_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.026"/>
+                    <SkewTransform AngleX="-19.711" AngleY="-4.073"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="127.065" Y="-40.258"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="TolyBot"  Content="" HorizontalAlignment="Left" Height="546" Style="{StaticResource MyButton}" Background="Transparent" Margin="-227,-40,0,0" VerticalAlignment="Top" Width="1178" RenderTransformOrigin="0.5,0.5" MouseEnter="TolyBot_MouseEnter" MouseLeave="TolyBot_MouseLeave" Click="TolyBot_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.97" ScaleY="1.055"/>
+                    <SkewTransform AngleX="-18.96" AngleY="-3.639"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="110.709" Y="13.611"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+
+        </Button>
+        <Button x:Name="Collaboration"  Content="" HorizontalAlignment="Left" Height="481" Style="{StaticResource MyButton}" Background="Transparent" Margin="963,-34,0,0" VerticalAlignment="Top" Width="941" RenderTransformOrigin="0.5,0.5" MouseEnter="TolyBot_Copy_MouseEnter" MouseLeave="TolyBot_Copy_MouseLeave" Click="Collaboration_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.97" ScaleY="1.055"/>
+                    <SkewTransform AngleX="-18.96" AngleY="-3.639"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="110.709" Y="13.611"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+
+        </Button>
+        <Label x:Name="DoneJ1" Content="Done" Foreground="Blue" HorizontalAlignment="Left" Margin="885,418,-113,0" VerticalAlignment="Top" FontSize="400" RenderTransformOrigin="0.5,0.5" Height="554" Width="1140" Visibility="Hidden">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-24.824"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="DoneJ2" Content="Done" Foreground="Blue" HorizontalAlignment="Left" Margin="-64,453,0,0" VerticalAlignment="Top" FontSize="400" RenderTransformOrigin="0.5,0.5" Height="554" Width="1140" Visibility="Hidden">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-24.824"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="DoneJ3" Content="Done" Foreground="Blue" HorizontalAlignment="Left" Margin="-24,-94,0,0" VerticalAlignment="Top" FontSize="400" RenderTransformOrigin="0.5,0.5" Height="554" Width="1140" Visibility="Hidden">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-24.824"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="DoneJ4" Content="Done" Foreground="Blue" HorizontalAlignment="Left" Margin="994,-123,-222,0" VerticalAlignment="Top" FontSize="400" RenderTransformOrigin="0.5,0.5" Height="554" Width="1140" Visibility="Hidden">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-24.824"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+    </Grid>
+</Window>

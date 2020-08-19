@@ -1,0 +1,111 @@
+﻿<Window x:Class="SuperMargalitProj.Collaboration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuperMargalitProj"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="Collaboration" Height="1080" Width="1920" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp" Closing="Window_Closing">
+    <Canvas>
+        <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Debugger!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+        <Image x:Name="EndL" Source="image/Collaboration/Rude.png"  Height="125" Canvas.Left="-3" Canvas.Top="484" Width="1926" Stretch="Fill"/>
+        <Canvas Height="1080" Width="20000" x:Name="Gridi" Canvas.Left="1" Canvas.Top="1">
+            <Canvas.Background>
+                <ImageBrush ImageSource="image/Collaboration/Map.png"></ImageBrush>
+            </Canvas.Background>
+            <MediaElement Volume="1" Name="Call" MediaEnded="media_MediaEnded" Source="Songs/Call.mp3" LoadedBehavior="Manual" UnloadedBehavior="Close" Height="1080" Width="1920" Visibility="Hidden" />
+
+            <Image x:Name="Margalit" Source="image/Journey/Right/1.png" Height="263" Canvas.Left="295" Canvas.Top="231" Width="262" Stretch="Fill"/>
+
+            <Image x:Name="Toly" Source="image/Collaboration/Right/1.png" Height="263" Canvas.Left="293" Canvas.Top="669" Width="174" Stretch="Fill"/>
+
+
+            <Label x:Name="lblTimeM" Foreground="Red"  Content="Ready?" Canvas.Left="817" Canvas.Top="178" FontSize="200" Width="658" Height="264"/>
+            <Label x:Name="lblTimeA" Foreground="Red"  Content="Ready?" Canvas.Left="808" Canvas.Top="649" FontSize="200" Width="658" Height="264"/>
+
+
+            <Image x:Name="Button1" Source="image/Collaboration/Button.png"  Height="49" Canvas.Left="3316" Canvas.Top="450" Width="146" Stretch="Fill"/>
+            <Image x:Name="Spike1" Source="image/Journey/Spike.png" Height="318" Canvas.Left="3003" Canvas.Top="615" Width="230" Stretch="Fill"/>
+
+
+            <Image x:Name="Button2" Source="image/Collaboration/Button.png"  Height="49" Canvas.Left="4154" Canvas.Top="144" Width="146" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Spike2" Source="image/Journey/Spike.png" Height="372" Canvas.Left="3663" Canvas.Top="609" Width="215" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+
+            <Image x:Name="Button3" Source="image/Collaboration/Button.png"  Height="49" Canvas.Left="9190" Canvas.Top="438" Width="146" Stretch="Fill"/>
+            <Image x:Name="Spike3" Source="image/Journey/Spike.png" Height="318" Canvas.Left="8811" Canvas.Top="615" Width="230" Stretch="Fill" RenderTransformOrigin="0.5,0.5"/>
+
+            <Image x:Name="Button4" Source="image/Collaboration/Button.png"  Height="49" Canvas.Left="8506" Canvas.Top="890" Width="146" Stretch="Fill"/>
+            <Image x:Name="Spike4" Source="image/Journey/Spike.png" Height="318" Canvas.Left="8811" Canvas.Top="165" Width="230" Stretch="Fill" RenderTransformOrigin="0.5,0.5"/>
+
+
+            <Image x:Name="PushButton1" Source="image\Collaboration\PushButton.png" Height="70" Canvas.Left="13080" Canvas.Top="924" Width="218" Stretch="Fill"/>
+            <Image x:Name="Rude1" Source="image\Collaboration\Rude.png"  Height="70" Canvas.Left="13009" Canvas.Top="935" Width="360" Stretch="Fill"/>
+
+            <Image x:Name="Block" Source="image/Collaboration/PushButton.png" Height="342" Canvas.Left="13900" Canvas.Top="145" Width="136" Stretch="Fill"/>
+
+            <Image x:Name="PushButton2" Source="image/Collaboration/PushButton.png" Height="70" Canvas.Left="14710" Canvas.Top="479" Width="218" Stretch="Fill"/>
+            <Image x:Name="Rude" Source="image/Collaboration/Rude.png"  Height="125" Canvas.Left="14645" Canvas.Top="486" Width="360" Stretch="Fill"/>
+
+            <Image x:Name="Rude3" Source="image/Collaboration/Rude.png"  Height="151" Canvas.Left="13856" Canvas.Top="-51" Width="224" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90.029"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Rude4" Source="image/Collaboration/Rude.png"  Height="125" Canvas.Left="17669" Canvas.Top="486" Width="360" Stretch="Fill"/>
+            <Image x:Name="Rude5" Source="image/Collaboration/Rude.png"  Height="125" Canvas.Left="18023" Canvas.Top="486" Width="360" Stretch="Fill"/>
+            <Image x:Name="Rude6" Source="image/Collaboration/Rude.png"  Height="126" Canvas.Left="10755" Canvas.Top="484" Width="360" Stretch="Fill"/>
+            <Image x:Name="Rude73" Source="image/Collaboration/Rude.png"  Height="126" Canvas.Left="11114" Canvas.Top="484" Width="360" Stretch="Fill"/>
+            <Image x:Name="Rude8" Source="image/Collaboration/Rude.png"  Height="126" Canvas.Left="11422" Canvas.Top="484" Width="360" Stretch="Fill"/>
+            <Image x:Name="Block2" Source="image/Collaboration/PushButton.png" Height="342" Canvas.Left="13900" Canvas.Top="604" Width="136" Stretch="Fill"/>
+            <Image x:Name="Rude3_Copy" Source="image/Collaboration/Rude.png"  Height="151" Canvas.Left="13852" Canvas.Top="986" Width="232" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90.029"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Ball" Source="image/Collaboration/Ball.png" Height="1038" Canvas.Left="-843" Canvas.Top="-52" Width="1052" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+
+
+        </Canvas>
+    </Canvas>
+</Window>

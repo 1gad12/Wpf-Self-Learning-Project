@@ -1,0 +1,31 @@
+﻿<Window x:Class="SuperMargalitProj.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuperMargalitProj"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="MainWindow" Height="1080" Width="1920" KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="image/Other/Menu1.png"></ImageBrush>
+        </Grid.Background>
+        <MediaElement Volume="1" Name="Main" Source="Songs/MainMenu.mp4" MediaEnded="media_MediaEnded"  LoadedBehavior="Manual" UnloadedBehavior="Close" Height="1080" Width="1920" Visibility="Hidden"/>
+
+        <MediaElement Volume="1" Name="MediaBoom" Source="Songs\Bomb.mp3" LoadedBehavior="Manual" UnloadedBehavior="Close" Height="1080" Width="1920" Visibility="Hidden" MediaEnded="MediaBoom_MediaEnded" />
+
+        <Button x:Name="Start"   Content=""   HorizontalAlignment="Left"   Style="{StaticResource MyButton}"   Background="Transparent" Margin="14,922,0,0" VerticalAlignment="Top" Width="427" Height="144" MouseEnter="Start_MouseEnter" MouseLeave="Start_MouseLeave" Click="Start_Click"/>
+        <Button x:Name="Option" Content=""   HorizontalAlignment="Left"   Style="{StaticResource MyButton}"   Background="Transparent" Margin="681,920,0,0" VerticalAlignment="Top" Width="581" Height="144" MouseEnter="Option_MouseEnter" MouseLeave="Option_MouseLeave" Click="Option_Click"/>
+        <Button x:Name="Boom"    Content=""   HorizontalAlignment="Left"   Style="{StaticResource MyButton}"   Background="Transparent" Margin="2,74,0,0" VerticalAlignment="Top" Width="393" Height="232" MouseEnter="Boom_MouseEnter" MouseLeave="Boom_MouseLeave" Click="Boom_Click"/>
+
+        <Button x:Name="I1"       Content=""   HorizontalAlignment="Left"   Style="{StaticResource MyButton}"   Background="Transparent" Margin="1355,892,0,0" VerticalAlignment="Top" Width="108" Height="162" MouseEnter="I1_MouseEnter" MouseLeave="I1_MouseLeave" Click="I1_Click" />
+
+        <Button x:Name="X"       Content=""   HorizontalAlignment="Left"   Style="{StaticResource MyButton}"   Background="Transparent" Margin="1740,-2,-9,0" VerticalAlignment="Top" Width="181" Height="189" MouseEnter="X_MouseEnter" MouseLeave="X_MouseLeave" Click="X_Click" />
+        <Image HorizontalAlignment="Left" Height="105" Margin="617,902,0,0" VerticalAlignment="Top" Width="135"/>
+        <Button x:Name="I2"       Content=""   HorizontalAlignment="Left"   Style="{StaticResource MyButton}"   Background="Transparent" Margin="494,892,0,0" VerticalAlignment="Top" Width="108" Height="162" MouseEnter="I2_MouseEnter" MouseLeave="I2_MouseLeave" Click="I1_Click" />
+        <Button x:Name="Help" Content=""   HorizontalAlignment="Left"   Style="{StaticResource MyButton}"   Background="Transparent" Margin="1561,921,0,0" VerticalAlignment="Top" Width="346" Height="144" MouseEnter="Help_MouseEnter" MouseLeave="Help_MouseLeave" Click="Help_Click"/>
+
+    </Grid>
+</Window>

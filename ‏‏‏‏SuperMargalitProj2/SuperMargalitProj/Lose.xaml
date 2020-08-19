@@ -1,0 +1,19 @@
+﻿<Window x:Class="SuperMargalitProj.Lose"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuperMargalitProj"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="Lose" Height="1080" Width="1920" KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="image/Other/YouLose.jpg"></ImageBrush>
+        </Grid.Background>
+        <MediaElement Volume="1" Name="Lose1" Source="Songs/Lose.mp3" MediaEnded="media_MediaEnded"  LoadedBehavior="Manual" UnloadedBehavior="Close" Height="1080" Width="1920" Visibility="Hidden"/>
+
+        <Button Content="Back" Background="White" HorizontalAlignment="Left" Height="231" Margin="722,797,0,0" VerticalAlignment="Top" Width="639" FontSize="72" Click="Button_Click"/>
+    </Grid>
+</Window>

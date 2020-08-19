@@ -1,0 +1,15 @@
+﻿<Window x:Class="SuperMargalitProj.Finish"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuperMargalitProj"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="Finish" Height="1080" Width="1920" KeyDown="Window_KeyDown">
+    <Grid>
+        <MediaElement Volume="1" Name="MediaFinish" MediaEnded="media_MediaEnded" Source="Songs/Finish.mp4" LoadedBehavior="Play" UnloadedBehavior="Close" Height="1080" Width="1920" Visibility="Visible" />
+
+    </Grid>
+</Window>

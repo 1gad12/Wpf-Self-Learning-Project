@@ -1,0 +1,154 @@
+﻿<Window x:Class="SuperMargalitProj.Journey"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuperMargalitProj"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="Journey" Height="1080" Width="1920" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp" Closing="Window_Closing">
+    <Canvas Name="Base">
+        <Canvas Name="Gridi" Height="1080" Width="16096" Canvas.Left="-14" >
+            <Canvas.Background>
+                <ImageBrush ImageSource="image/Journey/JourneyLev1Fix.png"></ImageBrush>
+            </Canvas.Background>
+
+            <MediaElement Volume="1" Name="Journey1" Source="Songs/Journey.mp4" MediaEnded="media_MediaEnded"  LoadedBehavior="Manual" UnloadedBehavior="Close" Height="1080" Width="1920" Visibility="Hidden"/>
+
+
+            <Image x:Name="Margalit" Source="image/Journey/Right/1.png" Height="215" Canvas.Top="712" Width="215" Stretch="Fill" Canvas.Left="0"/>
+            <Image x:Name="CShoot" Height="94" Canvas.Left="150" Canvas.Top="726" Width="100" Source="image/Journey/Csharp.png" Stretch="Fill" Visibility="Hidden"/>
+
+            <!--   
+            <Label x:Name="Up" Content="" Background="Red" Canvas.Top="720" Height="1" Width="25" Canvas.Left="100"/>
+            <Label x:Name="Down" Content="" Background="Red" Canvas.Top="926" Height="1" Width="114" Canvas.Left="48"/>
+            <Label x:Name="Left" Content="" Background="Red" Canvas.Top="771" Height="105" Width="1" Canvas.Left="47"/>
+            <Label x:Name="Right" Content="" Background="Red" Canvas.Left="162" Canvas.Top="771" Height="105" Width="1"/>
+      -->
+            <Image x:Name="Q1" Source="image/Journey/Ques.png" Height="78" Canvas.Left="1213" Canvas.Top="617" Width="79" Stretch="Fill"/>
+            <Image x:Name="Q2" Source="image/Journey/Ques.png" Height="78" Canvas.Left="1670" Canvas.Top="308" Width="80" Stretch="Fill"/>
+            <Image x:Name="Q3" Source="image/Journey/Ques.png" Height="78" Canvas.Left="1598" Canvas.Top="617" Width="72" Stretch="Fill"/>
+            <Image x:Name="Q4" Source="image/Journey/Ques.png" Height="78" Canvas.Left="1746" Canvas.Top="617" Width="72" Stretch="Fill"/>
+            <Image x:Name="Q5" Source="image/Journey/Ques.png" Height="78" Canvas.Left="5924" Canvas.Top="617" Width="72" Stretch="Fill"/>
+            <Image x:Name="Q6" Source="image/Journey/Ques.png" Height="78" Canvas.Left="7137" Canvas.Top="308" Width="72" Stretch="Fill"/>
+            <Image x:Name="Q7" Source="image/Journey/Ques.png" Height="78" Canvas.Left="8048" Canvas.Top="617" Width="72" Stretch="Fill"/>
+            <Image x:Name="Q8" Source="image/Journey/Ques.png" Height="78" Canvas.Left="6320" Canvas.Top="617" Width="72" Stretch="Fill"/>
+            <Image x:Name="Q9" Source="image/Journey/Ques.png" Height="78" Canvas.Left="8276" Canvas.Top="617" Width="72" Stretch="Fill"/>
+            <Image x:Name="Q10" Source="image/Journey/Ques.png"  Height="78" Canvas.Left="8503" Canvas.Top="617" Width="72" Stretch="Fill"/>
+            <Image x:Name="Q11" Source="image/Journey/Ques.png"  Height="78" Canvas.Left="8277" Canvas.Top="308" Width="72" Stretch="Fill"/>
+            <Image x:Name="Q12" Source="image/Journey/Ques.png"  Height="78" Canvas.Left="9797" Canvas.Top="308" Width="72" Stretch="Fill"/>
+            <Image x:Name="Q13" Source="image/Journey/Ques.png"  Height="78" Canvas.Left="9868" Canvas.Top="308" Width="72" Stretch="Fill"/>
+            <Image x:Name="Q14" Source="image/Journey/Ques.png"  Height="78" Canvas.Left="12909" Canvas.Top="617" Width="72" Stretch="Fill"/>
+
+            <Image x:Name="W1"  Source="image/Journey/Wall.png" Height="78" Canvas.Left="1519" Canvas.Top="617" Width="79" Stretch="Fill"/>
+            <Image x:Name="W2"  Source="image/Journey/Wall.png" Height="78" Canvas.Left="1667" Canvas.Top="617" Width="79" Stretch="Fill"/>
+            <Image x:Name="W3"  Source="image/Journey/Wall.png" Height="78" Canvas.Left="1814" Canvas.Top="617" Width="82" Stretch="Fill"/>
+            <Image x:Name="W4"  Source="image/Journey/Wall.png" Height="78" Canvas.Left="5842" Canvas.Top="617" Width="82" Stretch="Fill"/>
+            <Image x:Name="W5"  Source="image/Journey/Wall.png" Height="78" Canvas.Left="5994" Canvas.Top="617" Width="82" Stretch="Fill"/>
+            <Image x:Name="W6"  Source="image/Journey/Wall.png" Height="78" Canvas.Left="6071" Canvas.Top="308" Width="82" Stretch="Fill"/>
+            <Image x:Name="W7"  Source="image/Journey/Wall.png" Height="78" Canvas.Left="6153" Canvas.Top="308" Width="82" Stretch="Fill"/>
+            <Image x:Name="W8"  Source="image/Journey/Wall.png" Height="78" Canvas.Left="6235" Canvas.Top="308" Width="82" Stretch="Fill"/>
+            <Image x:Name="W9"  Source="image/Journey/Wall.png" Height="78" Canvas.Left="6317" Canvas.Top="308" Width="82" Stretch="Fill"/>
+            <Image x:Name="W10" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="6399" Canvas.Top="308" Width="82" Stretch="Fill"/>
+            <Image x:Name="W11" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="6481" Canvas.Top="308" Width="82" Stretch="Fill"/>
+            <Image x:Name="W12" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="6563" Canvas.Top="308" Width="112" Stretch="Fill"/>
+            <Image x:Name="W13" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="6909" Canvas.Top="308" Width="112" Stretch="Fill"/>
+            <Image x:Name="W14" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="7021" Canvas.Top="308" Width="116" Stretch="Fill"/>
+            <Image x:Name="W15" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="7133" Canvas.Top="617" Width="82" Stretch="Fill"/>
+            <Image x:Name="W16" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="7590" Canvas.Top="617" Width="82" Stretch="Fill"/>
+            <Image x:Name="W17" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="8954" Canvas.Top="617" Width="82" Stretch="Fill"/>
+            <Image x:Name="W18" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="9182" Canvas.Top="308" Width="82" Stretch="Fill"/>
+            <Image x:Name="W19" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="9264" Canvas.Top="308" Width="82" Stretch="Fill"/>
+            <Image x:Name="W20" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="9346" Canvas.Top="308" Width="68" Stretch="Fill"/>
+            <Image x:Name="W21" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="9794" Canvas.Top="617" Width="82" Stretch="Fill"/>
+            <Image x:Name="W22" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="9875" Canvas.Top="617" Width="70" Stretch="Fill"/>
+            <Image x:Name="W23" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="9717" Canvas.Top="308" Width="82" Stretch="Fill"/>
+            <Image x:Name="W24" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="9939" Canvas.Top="308" Width="82" Stretch="Fill"/>
+            <Image x:Name="W25" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="12758" Canvas.Top="617" Width="82" Stretch="Fill"/>
+            <Image x:Name="W26" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="12840" Canvas.Top="617" Width="71" Stretch="Fill"/>
+            <Image x:Name="W27" Source="image/Journey/Wall.png"  Height="78" Canvas.Left="12980" Canvas.Top="617" Width="82" Stretch="Fill"/>
+
+            <Image x:Name="Brick11" Height="306" Canvas.Left="10399" Canvas.Top="615" Width="82" Stretch="Fill"/>
+            <Image x:Name="Brick12" Height="228" Canvas.Left="10319" Canvas.Top="697" Width="82" Stretch="Fill"/>
+            <Image x:Name="Brick13" Height="156" Canvas.Left="10245" Canvas.Top="767" Width="82" Stretch="Fill"/>
+            <Image x:Name="Brick14" Height="76" Canvas.Left="10167" Canvas.Top="849" Width="82" Stretch="Fill"/>
+
+            <Image x:Name="Brick21" Height="306" Canvas.Left="10625" Canvas.Top="615" Width="82" Stretch="Fill"/>
+            <Image x:Name="Brick22" Height="228" Canvas.Left="10705" Canvas.Top="693" Width="82" Stretch="Fill"/>
+            <Image x:Name="Brick23" Height="156" Canvas.Left="10777" Canvas.Top="769" Width="82" Stretch="Fill"/>
+            <Image x:Name="Brick24" Height="76" Canvas.Left="10855" Canvas.Top="849" Width="82" Stretch="Fill"/>
+
+            <Image x:Name="Brick31" Height="306" Canvas.Left="11461" Canvas.Top="617" Width="157" Stretch="Fill"/>
+            <Image x:Name="Brick32" Height="228" Canvas.Left="11385" Canvas.Top="695" Width="82" Stretch="Fill"/>
+            <Image x:Name="Brick33" Height="156" Canvas.Left="11309" Canvas.Top="769" Width="82" Stretch="Fill"/>
+            <Image x:Name="Brick34" Height="76" Canvas.Left="11233" Canvas.Top="851" Width="82" Stretch="Fill"/>
+
+            <Image x:Name="Brick41" Height="306" Canvas.Left="11764" Canvas.Top="615" Width="82" Stretch="Fill"/>
+            <Image x:Name="Brick42" Height="228" Canvas.Left="11844" Canvas.Top="693" Width="82" Stretch="Fill"/>
+            <Image x:Name="Brick43" Height="156" Canvas.Left="11916" Canvas.Top="769" Width="82" Stretch="Fill"/>
+            <Image x:Name="Brick44" Height="76" Canvas.Left="11994" Canvas.Top="849" Width="82" Stretch="Fill"/>
+
+            <Image x:Name="Brick51" Height="616" Canvas.Left="14274" Canvas.Top="309" Width="157" Stretch="Fill"/>
+            <Image x:Name="Brick52" Height="537" Canvas.Left="14197" Canvas.Top="387" Width="79" Stretch="Fill"/>
+            <Image x:Name="Brick53" Height="460" Canvas.Left="14119" Canvas.Top="462" Width="79" Stretch="Fill"/>
+            <Image x:Name="Brick54" Height="382" Canvas.Left="14044" Canvas.Top="542" Width="79" Stretch="Fill"/>
+            <Image x:Name="Brick55" Height="307" Canvas.Left="13966" Canvas.Top="618" Width="79" Stretch="Fill"/>
+            <Image x:Name="Brick56" Height="232" Canvas.Left="13888" Canvas.Top="693" Width="79" Stretch="Fill"/>
+            <Image x:Name="Brick57" Height="154" Canvas.Left="13814" Canvas.Top="771" Width="80" Stretch="Fill"/>
+            <Image x:Name="Brick58" Height="74" Canvas.Left="13739" Canvas.Top="848" Width="80" Stretch="Fill"/>
+
+            <Image x:Name="Brick6" Height="74" Canvas.Left="15035" Canvas.Top="848" Width="80" Stretch="Fill"/>
+
+            <Image x:Name="P1" Source="image/Journey/Pipe.png" Height="156" Canvas.Left="2128" Canvas.Top="770" Width="148" Stretch="Fill"/>
+            <Image x:Name="P2" Source="image/Journey/Pipe.png" Height="232" Canvas.Left="2887" Canvas.Top="694" Width="148" Stretch="Fill"/>
+            <Image x:Name="P3" Source="image/Journey/Pipe.png" Height="310" Canvas.Left="3494" Canvas.Top="616" Width="148" Stretch="Fill"/>
+            <Image x:Name="P4" Source="image/Journey/Pipe.png" Height="310" Canvas.Left="4330" Canvas.Top="617" Width="148" Stretch="Fill"/>
+            <Image x:Name="P5" Source="image/Journey/Pipe.png" Height="156" Canvas.Left="12377" Canvas.Top="771" Width="148" Stretch="Fill"/>
+            <Image x:Name="P6" Source="image/Journey/Pipe.png" Height="156" Canvas.Left="13595" Canvas.Top="773" Width="148" Stretch="Fill"/>
+
+            <Image x:Name="Floor1" Height="150" Canvas.Left="0" Canvas.Top="928" Width="5237"/>
+            <Image x:Name="Floor2" Height="150" Canvas.Left="6767" Canvas.Top="929" Width="4849"/>
+            <Image x:Name="Floor3" Height="153" Canvas.Left="11770" Canvas.Top="928" Width="4326"/>
+            <Image x:Name="Floor4" Height="150" Canvas.Left="5392" Canvas.Top="928" Width="1129" />
+            <Label Content="Press K to Die" Height="176" Foreground="Red" Canvas.Left="3750" Canvas.Top="778" Width="544" FontSize="72"/>
+            <Label Name="liveLbl" Content="♥♥♥" Foreground="Red" Height="120" Canvas.Left="175" Width="262" FontSize="72"/>
+            <Label Name="liveTitleLbl" Content="life:" Foreground="Black" Height="120" Canvas.Left="5" Width="184" FontSize="72" Canvas.Top="-6"/>
+
+            <Image Name="Bad1"  Height="69" Canvas.Left="1780" Canvas.Top="545" Width="69"    Source="image/Journey/Bad.png" Stretch="Fill"/>
+            <Image x:Name="Bad2"  Height="69" Canvas.Left="3650" Canvas.Top="855" Width="69"  Source="image/Journey/Bad.png"  Stretch="Fill"/>
+            <Image x:Name="Bad3"  Height="69" Canvas.Left="12528" Canvas.Top="854" Width="69" Source="image/Journey/Bad.png"  Stretch="Fill"/>
+            <Image x:Name="Bad4"  Height="69" Canvas.Left="12960" Canvas.Top="548" Width="69" Source="image/Journey/Bad.png"  Stretch="Fill"/>
+            <Image x:Name="Bad5"  Height="69" Canvas.Left="6771" Canvas.Top="856" Width="69"  Source="image/Journey/Bad.png" Stretch="Fill"/>
+            <Image x:Name="Bad6"  Height="69" Canvas.Left="5399" Canvas.Top="860" Width="69"  Source="image/Journey/Bad.png" Stretch="Fill"/>
+            <Image x:Name="Bad7"  Height="69" Canvas.Left="10096" Canvas.Top="855" Width="69" Source="image/Journey/Bad.png"  Stretch="Fill"/>
+
+            <Image x:Name="Shiled" Height="212" Canvas.Left="242" Canvas.Top="713" Width="66" Source="image/Journey/Shiled.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image x:Name="FireShoot" Height="96" Canvas.Left="15720" Canvas.Top="720" Width="120" Source="image/Journey/FireShoot.png"/>
+
+            <Image x:Name="Fire"  Height="210" Canvas.Left="15724" Canvas.Top="714" Width="120" Source="image/Journey/Fire.png" Stretch="Fill"/>
+
+            <Image x:Name="CSharpImg" Height="96" Canvas.Left="435" Canvas.Top="9" Width="98" Source="image/Journey/Csharp.png" Stretch="Fill"/>
+
+
+            <Label x:Name="lblCS" Content=":" Canvas.Left="525" Width="40" FontSize="72" Canvas.Top="-10"/>
+            <Label x:Name="Cs" Content="8" Canvas.Left="555" Width="172" FontSize="72" Canvas.Top="-2"/>
+            <Image x:Name="End" Height="458" Canvas.Left="15338" Canvas.Top="472" Width="320"/>
+
+
+
+
+
+        </Canvas>
+    </Canvas>
+</Window>

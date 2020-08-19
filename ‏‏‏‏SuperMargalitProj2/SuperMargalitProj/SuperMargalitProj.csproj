@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD8BCFB5-1DF5-425C-8220-EEAC71CA7303}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SuperMargalitProj</RootNamespace>
+    <AssemblyName>SuperMargalitProj</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Collaboration.xaml.cs">
+      <DependentUpon>Collaboration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cyborg.xaml.cs">
+      <DependentUpon>Cyborg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Finish.xaml.cs">
+      <DependentUpon>Finish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help.xaml.cs">
+      <DependentUpon>Help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Journey.xaml.cs">
+      <DependentUpon>Journey.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lose.xaml.cs">
+      <DependentUpon>Lose.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SelectGame.xaml.cs">
+      <DependentUpon>SelectGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Win.xaml.cs">
+      <DependentUpon>Win.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Collaboration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cyborg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Finish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Info.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Journey.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lose.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Info.xaml.cs">
+      <DependentUpon>Info.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Options.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelectGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Options.xaml.cs">
+      <DependentUpon>Options.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Collaboration\Ball.png" />
+    <Resource Include="image\Collaboration\Button.png" />
+    <Resource Include="image\Collaboration\Left\1.png" />
+    <Resource Include="image\Collaboration\Left\10.png" />
+    <Resource Include="image\Collaboration\Left\11.png" />
+    <Resource Include="image\Collaboration\Left\12.png" />
+    <Resource Include="image\Collaboration\Left\2.png" />
+    <Resource Include="image\Collaboration\Left\3.png" />
+    <Resource Include="image\Collaboration\Left\4.png" />
+    <Resource Include="image\Collaboration\Left\5.png" />
+    <Resource Include="image\Collaboration\Left\6.png" />
+    <Resource Include="image\Collaboration\Left\7.png" />
+    <Resource Include="image\Collaboration\Left\8.png" />
+    <Resource Include="image\Collaboration\Left\9.png" />
+    <Resource Include="image\Collaboration\Map.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\Collaboration\Right\1.png" />
+    <Resource Include="image\Collaboration\Right\10.png" />
+    <Resource Include="image\Collaboration\Right\11.png" />
+    <Resource Include="image\Collaboration\Right\12.png" />
+    <Resource Include="image\Collaboration\Right\2.png" />
+    <Resource Include="image\Collaboration\Right\3.png" />
+    <Resource Include="image\Collaboration\Right\4.png" />
+    <Resource Include="image\Collaboration\Right\5.png" />
+    <Resource Include="image\Collaboration\Right\6.png" />
+    <Resource Include="image\Collaboration\Right\7.png" />
+    <Resource Include="image\Collaboration\Right\8.png" />
+    <Resource Include="image\Collaboration\Right\9.png" />
+    <Resource Include="image\Collaboration\Stairs.png" />
+    <Resource Include="image\Journey\Bad.png" />
+    <Resource Include="image\Journey\Csharp.png" />
+    <Resource Include="image\Journey\EmptyQ.png" />
+    <Resource Include="image\Journey\Fire.png" />
+    <Resource Include="image\Journey\FireShoot.png" />
+    <Resource Include="image\Journey\h.png" />
+    <Resource Include="image\Journey\JourneyLev1Fix.png" />
+    <Resource Include="image\Journey\Left\1.png" />
+    <Resource Include="image\Journey\Left\10.png" />
+    <Resource Include="image\Journey\Left\11.png" />
+    <Resource Include="image\Journey\Left\12.png" />
+    <Resource Include="image\Journey\Left\13.png" />
+    <Resource Include="image\Journey\Left\14.png" />
+    <Resource Include="image\Journey\Left\15.png" />
+    <Resource Include="image\Journey\Left\2.png" />
+    <Resource Include="image\Journey\Left\3.png" />
+    <Resource Include="image\Journey\Left\4.png" />
+    <Resource Include="image\Journey\Left\5.png" />
+    <Resource Include="image\Journey\Left\6.png" />
+    <Resource Include="image\Journey\Left\7.png" />
+    <Resource Include="image\Journey\Left\8.png" />
+    <Resource Include="image\Journey\Left\9.png" />
+    <Resource Include="image\Journey\Left\Left.gif" />
+    <Resource Include="image\Journey\Left\walkcycle_ww.gif" />
+    <Resource Include="image\Journey\Pipe.png" />
+    <Resource Include="image\Journey\QC#.png" />
+    <Resource Include="image\Journey\QC.png" />
+    <Resource Include="image\Journey\Qheart.png" />
+    <Resource Include="image\Journey\QSpike.png" />
+    <Resource Include="image\Journey\Ques.png" />
+    <Resource Include="image\Journey\Right\1.png" />
+    <Resource Include="image\Journey\Right\10.png" />
+    <Resource Include="image\Journey\Right\11.png" />
+    <Resource Include="image\Journey\Right\12.png" />
+    <Resource Include="image\Journey\Right\13.png" />
+    <Resource Include="image\Journey\Right\14.png" />
+    <Resource Include="image\Journey\Right\15.png" />
+    <Resource Include="image\Journey\Right\2.png" />
+    <Resource Include="image\Journey\Right\3.png" />
+    <Resource Include="image\Journey\Right\4.png" />
+    <Resource Include="image\Journey\Right\5.png" />
+    <Resource Include="image\Journey\Right\6.png" />
+    <Resource Include="image\Journey\Right\7.png" />
+    <Resource Include="image\Journey\Right\8.png" />
+    <Resource Include="image\Journey\Right\9.png" />
+    <Resource Include="image\Journey\Right\Asm.png" />
+    <Resource Include="image\Journey\Right\Right.gif" />
+    <Resource Include="image\Journey\Right\walkcycle_ww.gif" />
+    <Resource Include="image\Journey\Shiled.png" />
+    <Resource Include="image\Journey\ShiledPosR.png" />
+    <Resource Include="image\Journey\Spike.png" />
+    <Resource Include="image\Journey\Wall.png" />
+    <Resource Include="image\Journey\‏‏ShiledPosL.png" />
+    <Resource Include="image\MargaBot\Class.jpg" />
+    <Resource Include="image\MargaBot\Failed.png" />
+    <Resource Include="image\MargaBot\MargalitBot.png" />
+    <Resource Include="image\MargaBot\Table.png" />
+    <Resource Include="image\MargaBot\Visual.png" />
+    <Resource Include="image\Other\Arrow.png" />
+    <Resource Include="image\Other\Back.png" />
+    <Resource Include="image\Other\BackI.png" />
+    <Resource Include="image\Other\Boom.png" />
+    <Resource Include="image\Other\BrightS.png" />
+    <Resource Include="image\Other\Collaboration.png" />
+    <Resource Include="image\Other\I.png" />
+    <Resource Include="image\Other\Info.png" />
+    <Resource Include="image\Other\Journey.png" />
+    <Resource Include="image\Other\Margabot.png" />
+    <Resource Include="image\Other\Menu2.png" />
+    <Resource Include="image\Other\Mhelp.png" />
+    <Resource Include="image\Other\Moptions.png" />
+    <Resource Include="image\Other\Mstart.png" />
+    <Resource Include="image\Other\Mute.png" />
+    <Resource Include="image\Other\Option.png" />
+    <Resource Include="image\Other\Selectgame.png" />
+    <Resource Include="image\Other\Tolybot.png" />
+    <Resource Include="image\Other\Voice.png" />
+    <Resource Include="image\Other\X.png" />
+    <Resource Include="image\Other\YouLose.jpg" />
+    <Resource Include="image\tolybot\Asm.png" />
+    <Resource Include="image\tolybot\Bug.png" />
+    <Resource Include="image\tolybot\DosBox.png" />
+    <Resource Include="image\tolybot\Error.png" />
+    <Resource Include="image\tolybot\Map.jpg" />
+    <Resource Include="image\tolybot\TolyBorg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Collaboration\PushButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Collaboration\Rude.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Other\YouWin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Other\Gad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Other\Rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Other\Help.png" />
+    <Resource Include="image\Other\Menu1.png" />
+    <Content Include="Songs\Call.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Songs\InfoOption.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Songs\Journey.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Songs\Bomb.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Songs\Champ.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Songs\SelectWin.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Songs\MargaBot.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Songs\Finish.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Songs\Lose.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Songs\TolyBot.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Songs\MainMenu.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

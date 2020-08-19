@@ -1,0 +1,41 @@
+﻿<Window x:Class="SuperMargalitProj.Cyborg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuperMargalitProj"
+        mc:Ignorable="d"   
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="Cyborg"  Height="1080" Width="1920" Name="main" KeyDown="Window_KeyDown" MouseMove="Window_MouseMove" >
+    <Canvas x:Name="gridi">
+        <Canvas Width="3840" Height="1080" Canvas.Left="-3" Cursor="Hand" MouseDown="Canvas_MouseDown">
+            <Canvas.Background>
+                <ImageBrush ImageSource="image/tolybot/Map.jpg" x:Name="Back"></ImageBrush>
+            </Canvas.Background>
+            <MediaElement Volume="1" Name="Toly" MediaEnded="media_MediaEnded" Source="Songs/TolyBot.mp3" LoadedBehavior="Manual" UnloadedBehavior="Close" Height="1080" Width="1920" Visibility="Hidden" />
+
+            <Image x:Name="DosBox"   Source="image/tolybot/DosBox.png" Height="498" Canvas.Left="-1" Canvas.Top="581" Width="510" Stretch="Fill"/>
+            <Image x:Name="tolyborg" Source="image/tolybot/tolyborg.png"  Height="257" Canvas.Left="368" Canvas.Top="324" Width="147" Stretch="Fill"/>
+            <Image x:Name="Arrow" Height="68" Canvas.Left="567" Canvas.Top="374" Width="102" Source="image/Other/Arrow.png" Stretch="Fill" RenderTransformOrigin="-1.113,-0.64" Cursor="Hand"/>
+            <Image x:Name="shoot" Source="image/Journey/Right/Asm.png"  Height="136" Canvas.Left="368" Canvas.Top="324" Width="204" Stretch="Fill" Visibility="Hidden"/>
+            <ProgressBar x:Name="Life"  Height="62" Canvas.Left="7" Canvas.Top="13" Width="772" Value="100"/>
+
+            <Image x:Name="B1" Source="image/tolybot/Error.png" Height="139" Canvas.Left="1943" Canvas.Top="910" Width="154"/>
+            <Image x:Name="B2" Source="image/tolybot/Error.png" Height="139" Canvas.Left="1943" Canvas.Top="915" Width="154"/>
+            <Image x:Name="B3" Source="image/tolybot/Error.png" Height="139" Canvas.Left="1943" Canvas.Top="920" Width="154"/>
+            <Image x:Name="B4" Source="image/tolybot/Error.png" Height="139" Canvas.Left="1943" Canvas.Top="925" Width="154"/>
+            <Image x:Name="B5" Source="image/tolybot/Error.png" Height="139" Canvas.Left="1943" Canvas.Top="930" Width="154"/>
+
+            <Image x:Name="U1" Source="image/tolybot/Bug.png" Height="139" Canvas.Left="1928" Canvas.Top="5" Width="154"/>
+            <Image x:Name="U2" Source="image/tolybot/Bug.png"  Height="139" Canvas.Left="1928" Canvas.Top="10" Width="154"/>
+            <Image x:Name="U3" Source="image/tolybot/Bug.png"  Height="139" Canvas.Left="1928" Canvas.Top="15" Width="154"/>
+            <Image x:Name="U4" Source="image/tolybot/Bug.png"  Height="139" Canvas.Left="1928" Canvas.Top="20" Width="154"/>
+            <Image x:Name="U5" Source="image/tolybot/Bug.png"  Height="139" Canvas.Left="1928" Canvas.Top="25" Width="154"/>
+            <Label x:Name="lblR" Content="Start" Height="297" Canvas.Left="674" Canvas.Top="318" Width="1150" FontSize="200"/>
+
+
+
+        </Canvas>
+    </Canvas>
+</Window>
