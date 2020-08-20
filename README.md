@@ -11,7 +11,7 @@ the project is a c# wpf code
 the code was programmed on visual studio 2019
 
 *****importent*****
-there is a bug in the software that the resulotion need to be 1920x1080
+there is a bug in the software that the resolution need to be 1920x1080
 and the fontsize of windows need to be 100%
 *****importent*****
  
